@@ -1,38 +1,84 @@
-.App {
+@font-face {
+    font-family: Manrope;
+  src: url('./Assets/Fonts/Manrope-Regular.ttf');
+  font-weight: 800;
+}
+
+body{
+
+  background-color: hsl(218, 23%, 16%);
+}
+
+.pt{
+  padding-top: 300px;
+}
+
+.box {
+  background-color: hsl(217, 19%, 24%) !important;
+  box-shadow: 0px 0px 2000px rgba(70, 70, 70, 0.023) ;
+  height: 350px;
+  width: 600px;
+  border-radius: 15px;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttonBackground{
+  background-color: hsl(150, 100%, 66%);
+  border:none;
+  background-image: url('./Assets/icon-dice.png') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  position:relative;
+  bottom: 30px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttonBackground:hover{
+  box-shadow: 0px 0px 10px hsl(150, 100%, 66%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.font{
+  font-family: Manrope;
+  font-size: 28px;
+  color:hsl(193, 38%, 86%);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.font-2{
+  font-family: Manrope;
+  color: hsl(150, 100%, 66%);
+  font-size: 23px;
+  font-weight: 800 !important;
+  letter-spacing: 2px;
+  
+}
+
+.center2{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  
+  .box {
+    width: 85%;
+    
+  }
+
+  .font {
+    font-size: 20px;
+  }
+
+  .font-2 {
+    font-size: 18px;
+  }
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
